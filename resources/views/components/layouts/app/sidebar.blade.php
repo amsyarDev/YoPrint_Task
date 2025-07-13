@@ -14,6 +14,7 @@
             <flux:navlist variant="outline">
                 <flux:navlist.group :heading="__('Main')" class="grid">
                     <flux:navlist.item icon="cloud-arrow-up" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Import Data') }}</flux:navlist.item>
+                    <flux:navlist.item icon="inbox-stack" :href="route('horizon.index')" wire:navigate>{{ __('Horizon Dashboard') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
 
